@@ -142,6 +142,6 @@ No known bugs at this time.
 
 ## Authors
 Kenneth Igbo - [Github](https://github.com/CodeRaiden)
-Monday Odoho - [Github](https://github.com/Monemax94/AirBnB_clone)
-Mercy Boma - [Github](https://github.com/bomanaps Mercy Boma Naps Nkari)
-David Odimayo - [Github](https://github.com/)
+Monday Odoho - [Github](https://github.com/Monemax94)
+Mercy Boma - [Github](https://github.com/bomanaps)
+David Odimayo - [Github](https://github.com/Diab-io)
