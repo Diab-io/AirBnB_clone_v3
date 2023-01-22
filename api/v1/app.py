@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script returns the status of the API
+Returns the status of the API
 """
 
 from models import storage
@@ -20,6 +20,13 @@ app.url_map.strict_slashes = False
 app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 # registers the blueprint app_views to your Flask instance app
 app.register_blueprint(app_views)
+
+
+@app.errorhandler(404)
+def error_404(err):
+    """Produce a 404 error message"""
+    return make_response(jsonify(error="Not found"), 404)
+
 
 @app.teardown_appcontext
 def close_storage(exe):
