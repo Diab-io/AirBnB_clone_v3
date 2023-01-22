@@ -21,6 +21,11 @@ app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 # registers the blueprint app_views to your Flask instance app
 app.register_blueprint(app_views)
 
+@app.teardown_appcontext
+def close_storage(exe):
+    """closes storage"""
+    storage.close()
+
 
 if __name__ == "__main__":
     app.run(host=HOST, port=PORT, threaded=True)
